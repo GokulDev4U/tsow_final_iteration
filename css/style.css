@@ -167,7 +167,8 @@ input[type="submit"] {
 }
 
 .svg_container {
-  max-width: 900px;
+  /* max-width: 900px; */
+  max-width: 850px;
   max-height: 454px;
   width: 100%;
   height: 100%;
@@ -270,5 +271,8 @@ input[type="submit"] {
   .summary_heading {
     text-align: center;
     margin-bottom: 40px;
+  }
+  .svg_container {
+    margin-top: 30px;
   }
 }
