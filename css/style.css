@@ -21,3 +21,144 @@ body {
   padding: 0px;
   scroll-behavior: smooth;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav_section {
+  /* height: 91px; */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-self: center;
+  z-index: 100;
+
+  background-color: white;
+}
+.nav_section_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.line {
+  border: 1px solid #1877f2;
+}
+
+button[type="submit1"] {
+  width: 133px;
+  background: #1877f2;
+  border-radius: 50px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 140px;
+  padding-left: 29px;
+}
+.heading > p {
+  font-weight: 800;
+  font-size: clamp(36px, 8vw, 48px);
+  line-height: clamp(44px, 6vw, 59px);
+}
+.heading > p:first-child.heading_text_black {
+  color: black;
+}
+.heading > p:last-child.heading_text_green {
+  color: green;
+}
+
+.signup_container {
+  width: 357px;
+  height: 192px;
+  background: #ffffff;
+  border: 1px solid #1877f2;
+  box-sizing: border-box;
+  border-radius: 40px;
+  margin-left: 29px;
+  margin-top: 40px;
+}
+
+.signup_inner_container {
+  margin-left: 34px;
+  margin-top: 24px;
+}
+
+.coin_title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3f2d3b;
+}
+.account_label {
+  font-size: 9px;
+  line-height: 11px;
+  color: #3f2d3b;
+  margin-top: 10px;
+}
+
+input[type="text"],
+select {
+  width: 280px;
+  height: 35px;
+  padding: 6px 10px;
+  margin: 5px 0;
+  background: #ecf0f3;
+  border-radius: 10px;
+  border-color: #ecf0f3;
+  border: none;
+}
+
+input[type="text"].mobileno::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 151.5%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #c4c4c4;
+}
+
+input[type="submit"] {
+  width: 131px;
+  background: #1877f2;
+  border-radius: 50px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
