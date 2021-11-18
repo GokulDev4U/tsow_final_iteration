@@ -96,18 +96,19 @@ button[type="submit1"] {
 }
 
 .signup_container {
-  width: 357px;
+  /* width: 357px; */
   height: 192px;
   background: #ffffff;
   border: 1px solid #1877f2;
   box-sizing: border-box;
   border-radius: 40px;
   margin-left: 29px;
+  margin-right: 29px;
   margin-top: 40px;
 }
 
 .signup_inner_container {
-  margin-left: 34px;
+  margin-left: 20px;
   margin-top: 24px;
 }
 
@@ -126,7 +127,7 @@ button[type="submit1"] {
 
 input[type="text"],
 select {
-  width: 280px;
+  width: 90%;
   height: 35px;
   padding: 6px 10px;
   margin: 5px 0;
