@@ -202,7 +202,11 @@ input[type="submit"] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10%;
+  /* margin: 0px 10%; */
+  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .summary_heading {
@@ -217,7 +221,7 @@ input[type="submit"] {
 .early_heading {
   text-align: center;
   margin-right: 20%;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .early_heading_first {
   /* font-size: 17px; */
@@ -292,6 +296,7 @@ input[type="submit"] {
   .first_wrapper {
     display: flex;
     flex-direction: column;
+    margin: 50px 0%;
     /* align-items: center; */
   }
   .third_wrapper {
@@ -315,5 +320,13 @@ input[type="submit"] {
   }
   .nav_section_inner {
     padding: 20px 3%;
+  }
+  .heading {
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+  .signup_container {
+    margin-left: 15px;
+    margin-right: 5px;
   }
 }
