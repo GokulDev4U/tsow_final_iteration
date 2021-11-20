@@ -133,9 +133,10 @@ button[type="submit1"] {
   color: #3f2d3b;
 }
 .account_label {
-  font-size: 9px;
+  font-size: 12px;
   line-height: 11px;
-  color: #3f2d3b;
+  font-weight: 500;
+  color: #72686f;
   margin-top: 10px;
 }
 
@@ -160,7 +161,8 @@ input[type="text"].mobileno::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  color: #c4c4c4;
+  /* color: #c4c4c4; */
+  color: #72686f;
 }
 
 input[type="submit"] {
