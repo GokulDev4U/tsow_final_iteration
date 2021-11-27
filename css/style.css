@@ -555,6 +555,22 @@ input[type="submit"] {
   .four_container {
     padding: 10px 30px;
   }
+  .people_container {
+    margin: 30px 2%;
+  }
+  .user_container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 20px;
+    padding: 50px 15px;
+  }
+  .user_text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 50px 0px;
+  }
 }
 @media screen and (max-width: 1744px) and (min-width: 1110px) {
   .middle_container {
