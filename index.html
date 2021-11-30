@@ -49,10 +49,26 @@
                         <form>
                             <label for="mobileno" class="account_label">Enter Your Mobile Number to create account</label><br>
                             <input type="text" class="mobileno" name="mobileno" placeholder="Enter 10 Digit Number:"><br>
-                            <input type="submit" value="Start Networking">
+                            <input id="mobileButton" type="submit" value="Start Networking">
                         </form>
+                       
                     </div>
                 </div>
+                <div id="otp" class="otp">
+                    <!-- Modal content -->
+                    <div class="otp-content">
+                      <span class="close">&times;</span>
+                      <p class="otp_text">please type the OTP sent to<br /> 
+                        +91 9876543210.</p>
+                        <form>
+                            <input type="text" class="otp_input" name="otp" placeholder="Enter 6 Digits OTP No."><br>
+                        </form>
+                        <span class="seconds">0:10</span>
+                        <span class="resend_otp"><img src="./img/message.png" alt="" >&ensp; Resend OTP</span>
+                    </div>
+                   
+                </div>
+
             </div>
                 <div class="svg_container">
                     <!-- <img src="./img/post.svg" alt="post_card" > -->
@@ -99,7 +115,7 @@
             <a href='#signup_container'><button type="submit2" onclick="">Book your Spot</button></a>
         </div>
 
-        <div class="middle_container">
+        <!-- <div class="middle_container">
             <img src="./img/app_all_screen.png" class="screen" alt="">
             <div class="four_container">
                 <div class="first_row">
@@ -150,46 +166,76 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
+        <!-- width="1439" height="868"  -->
+        <!-- <div class="" style="width: fit-content; height: fit-content;"> -->
+            <!-- <div class="wave_container">
+                <div class="wave1">
+                    <svg viewBox="0 0 1439 868" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0C692.345 165.388 1192.44 334.175 1440 0V868C754.084 766.436 171.804 607.776 0 868V0Z" fill="#3E3FC9"/>
+                    </svg>
+                </div>
+
+                <div class="bubble_Container">
+                    <div class="bubble_Container1">
+                        <div class="bubble1_container">
+                            <img src="./img/bubble1.svg" class="bubble1" alt="">
+                        </div>
+                        <div class="bubble2_container">
+                            <img src="./img/bubble2.svg" class="bubble2" alt="">
+                        </div>
+                    </div>
+                    <div class="bubble_Container2">
+                        <div class="bubble3_container">
+                            <img src="./img/bubble3.svg" class="bubble3" alt="">
+                        </div>
+                        <div class="bubble4_container">
+                            <img src="./img/bubble4.svg" class="bubble4" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
 
         <div class="people_container">
             <span class="people_bold">
                 Who’s On Tsow!
             </span>
             <span class="people_inner_container">
-                <div class="people">
+                <span class="people">
                     <img src="./img/Entreprenuers.png" alt="">
                     <p class="people_heading">Entreprenuers</p>
-                </div>
-                <div class="people">
+                </span>
+                <span class="people">
                     <img src="./img/Start-ups.png" alt="">
                     <p class="people_heading">Start-ups</p>
-                </div>
-                <div class="people">
+                </span>
+                <span class="people">
                     <img src="./img/Experts.png" alt="">
                     <p class="people_heading">Experts</p>
-                </div>
-                <div class="people">
+                </span>
+                <span class="people">
                     <img src="./img/Students.png" alt="">
                     <p class="people_heading">Students</p>
-                </div>
+                </span>
             </span>
             
             <span class="people_inner_container">
-                <div class="people">
+                <span class="people">
                     <img src="./img/Professionals.png" alt="">
                     <p class="people_heading">Professionals</p>
-                </div>
-                <div class="people">
+                </span>
+                <span class="people">
                     <img src="./img/Freelancers.png" alt="">
                     <p class="people_heading">Freelancers</p>
-                </div>
-                <div class="people">
+                </span>
+                <span class="people">
                     <img src="./img/Businessmen.png" alt="">
                     <p class="people_heading">Businessmen</p>
-                </div>
+                </span>
             </span>
         </div>
+        
         <div class="user_container">
             <div class="user_inner_container">
                 <span class="heading_yellow_count">5,000+</span>
@@ -199,6 +245,12 @@
             </div>
             <a href='#signup_container'><button type="submit1" onclick="">Start Networking</button></a>
         </div>
+
+        <div class="wave2">
+
+        </div>
     </div>
+    <script src="./js/script.js">
+    </script>
 </body>
 </html>
