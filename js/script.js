@@ -23,3 +23,12 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// {
+//   title: "bank",
+//   profession: ["prof1", "prof2", "prof3"],
+// },
+// {
+//   title: "bank2",
+//   profession: ["prof1", "prof2", "prof3"],
+// },
