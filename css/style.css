@@ -276,6 +276,11 @@ input[type="text"] .first_name_input,
   text-transform: capitalize;
   color: #72686f;
 }
+/* #mobileno {
+  max-height: 40px;
+  font-size: 20px;
+  padding: 10px;
+} */
 .error_message {
   font-weight: 500;
   font-size: 9px;
@@ -539,6 +544,12 @@ button[type="submit"] {
   transform: translate(-70%, -50%);
 }
 .growth {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+.ask_corner {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -837,6 +848,51 @@ button[type="submit"] {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .bubble_Container1,
+  .bubble_Container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bubble_Container1 {
+    margin-bottom: -20%;
+  }
+  .bubble1_container,
+  .bubble3_container {
+    margin-right: 0%;
+  }
+  .wave_container {
+    width: 100%;
+  }
+  .bubble1_container,
+  .bubble2_container {
+    top: -90px;
+  }
+  .bubble3_container,
+  .bubble4_container {
+    bottom: -90px;
+  }
+  .Grow_network {
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-70%, -52%);
+  }
+  .networth {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-70%, -60%);
+  }
+  .growth {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+  }
+}
 @media screen and (max-width: 480px) {
   .first_wrapper {
     display: flex;
@@ -961,7 +1017,7 @@ button[type="submit"] {
     align-items: center;
   }
   .bubble_Container1 {
-    margin-bottom: 0%;
+    margin-bottom: -27%;
   }
   .bubble1_container,
   .bubble3_container {
@@ -977,5 +1033,23 @@ button[type="submit"] {
   .bubble3_container,
   .bubble4_container {
     bottom: -90px;
+  }
+  .Grow_network {
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-70%, -52%);
+  }
+  .networth {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-70%, -60%);
+  }
+  .growth {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-70%, -50%);
   }
 }
