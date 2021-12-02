@@ -1170,3 +1170,6 @@ button[type="submit"] {
     margin-bottom: 150px;
   }
 }
+#mobileError{
+  display: none;
+}
