@@ -173,8 +173,9 @@ button[type="submit2"] {
 .otp-content {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 
 .close {
@@ -276,6 +277,14 @@ input[type="text"] .first_name_input,
   text-transform: capitalize;
   color: #ee1414;
 }
+.member_text {
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
 /*  */
 input[type="text"],
 select {
@@ -303,29 +312,20 @@ input[type="text"].mobileno,
 }
 
 button[type="submit"] {
-  /* width: 131px; */
   background: #1877f2;
   border-radius: 50px;
   color: white;
   font-weight: bold;
   font-size: clamp(12px, 1vw, 18px);
   line-height: 12px;
-  padding: 15px 20px;
+  padding: 15px 30px;
   margin: 10px 0;
   border: none;
   cursor: pointer;
   text-align: center;
-  /* font-size: 12px; */
-  /* line-height: 12px;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  cursor: pointer; */
 }
 
 .svg_container {
-  /* max-width: 900px; */
-  /* max-height: 554px; */
   max-width: 700px;
   max-height: 500px;
   width: 100%;
