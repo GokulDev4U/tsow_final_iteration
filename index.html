@@ -44,9 +44,13 @@
                         </p>
                         <form>
                             <label  class="account_label">Enter Your Mobile Number to create account</label><br>
-                            <input id='mobileno' type="text" class="mobileno"  placeholder="Enter 10 Digit Mobile Number:"><br>
+                            <input id='mobileno' type="text" class="mobileno"  placeholder="Enter 10 Digit Mobile Number:">
+                            <span id="mobileError" class="error_message">Enter valid mobile number</span>
+                            <br>
                         </form>
-                        <a href='otp.html'><button id="mobileButton" type="submit" >Start Networking</button></a>
+                        <button onclick="startNetWorking()" type="submit" >Start Networking</button>
+                        <!-- <a href='otp.html'>
+                        </a> -->
                     </div>
                 </div>
 

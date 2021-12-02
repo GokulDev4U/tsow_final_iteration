@@ -1407,3 +1407,6 @@ button[type="submit"] {
     right: -10px;
   }
 }
+#mobileError{
+  display: none;
+}
