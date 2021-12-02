@@ -1121,23 +1121,41 @@ button[type="submit"] {
   .bubble4_container {
     bottom: -90px;
   }
+  .container_heading {
+    position: absolute;
+    top: 20%;
+    left: 39%;
+    transform: translate(-20%, -39%);
+  }
+  .container_subheading {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-35%, -40%);
+  }
   .Grow_network {
     position: absolute;
     top: 70%;
-    left: 52%;
-    transform: translate(-70%, -52%);
+    left: 55%;
+    transform: translate(-70%, -55%);
   }
   .networth {
     position: absolute;
-    top: 70%;
+    top: 80%;
+    left: 73%;
+    transform: translate(-80%, -73%);
+  }
+  .ask_corner {
+    position: absolute;
+    top: 74%;
     left: 60%;
-    transform: translate(-70%, -60%);
+    transform: translate(-74%, -60%);
   }
   .growth {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-70%, -50%);
+    top: 81%;
+    left: 55%;
+    transform: translate(-81%, -55%);
   }
   .top_wave_container {
     display: flex;
@@ -1146,10 +1164,15 @@ button[type="submit"] {
   .mobile_screens {
     position: relative;
     top: -150px;
-    width: 140%;
+    width: 100%;
   }
   .early_birds_container {
-    margin: 0px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -120px;
+  }
+  .working_steps_container {
+    margin-top: -90px;
   }
   .working_step {
     font-weight: 600;
