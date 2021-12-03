@@ -841,9 +841,10 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  margin-right: 15px;
 }
 .heading_yellow_count {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 48px;
   line-height: 59px;
   color: #fdd015;
