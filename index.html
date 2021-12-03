@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no ">
-        <title>Earn From Your Network</title>
-        <link rel = "icon" href ="./img/web_applogo.svg" type = "image/svg+xml">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no "
+    />
+    <title>Earn From Your Network</title>
+    <link rel="icon" href="./img/web_applogo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="pac-loader">
-            <img class="pac-img" src="./img/pacloader.gif" alt="">
+      <div class="pac-loader">
+        <img class="pac-img" src="./img/pacloader.gif" alt="" />
+      </div>
+      <div class="nav_section">
+        <div class="nav_section_inner">
+          <img src="./img/Logo.svg" alt="" />
+          <a href="#signup_container"
+            ><button type="submit1" onclick="">Start Networking</button></a
+          >
         </div>
-        <div class="nav_section">
-            <div class="nav_section_inner">
-                <img src="./img/Logo.svg" alt="" >
-                <a href='#signup_container'><button type="submit1" onclick="">Start Networking</button></a>
-            </div>
-            <div class="line"></div>
-        </div>
+        <div class="line"></div>
+      </div>
 
-        <div class="first_wrapper">
-            <div class="second_wrapper">
-                <div class="heading">
-                        <p class="heading_text_black">
-                            The <br />
-                            Social Network <br />
-                            That <br />
-                        </p>
-                        <p class="heading_text_green">
-                            Rewards<br />
-                            You!
-                        </p>
-                </div>
+      <div class="first_wrapper">
+        <div class="second_wrapper">
+          <div class="heading">
+            <p class="heading_text_black">
+              The <br />
+              Social Network <br />
+              That <br />
+            </p>
+            <p class="heading_text_green">
+              Rewards<br />
+              You!
+            </p>
+          </div>
 
-                <div class="signup_container" id="signup_container">
-                    <div class="signup_inner_container">
-                        <p class="coin_title">
-                            Become an early member &<br /> 
-                            Get 5,000 Bonus Coins!
-                        </p>
-                        <form>
-                            <label  class="account_label">Enter Your Mobile Number to create account</label><br>
-                            <input autocomplete="none" id='mobileno' type="number" class="mobileno input-box"  placeholder="+91 XXXX XXXX XX">
-                            <div id="mobileError" class="error_message"></div>
-                            <br>
-                        </form>
-                        <button onclick="startNetWorking()" id="startNetworking" >Start Networking</button>
-                        <!-- <a href='otp.html'>
+          <div class="signup_container" id="signup_container">
+            <div class="signup_inner_container">
+              <p class="coin_title">
+                Become an early member &<br />
+                Get 5,000 Bonus Coins!
+              </p>
+
+              <label class="account_label"
+                >Enter Your Mobile Number to create account</label
+              ><br />
+              <input
+                autocomplete="none"
+                id="mobileno"
+                type="number"
+                class="mobileno input-box"
+                placeholder="+91 XXXX XXXX XX"
+              />
+              <div id="mobileError" class="error_message"></div>
+              <br />
+
+              <button onclick="startNetWorking()" id="startNetworking">
+                Start Networking
+              </button>
+              <!-- <a href='otp.html'>
                         </a> -->
-                    </div>
-                </div>
+            </div>
+          </div>
 
-
-               
-
-                <!-- <div id="otp" class="otp">
+          <!-- <div id="otp" class="otp">
                     <div class="otp-content">
                       <span class="close">&times;</span>
                       <p class="otp_text">please type the OTP sent to<br /> 
@@ -90,20 +105,19 @@
                     </div> 
 
                 </div> -->
-
-            </div>
-            <div class="container_info">
-                <div class="svg_container">
-                    <img src="./img/post_card.svg" alt="post_card" >
-                </div>
-               
-                <div class="label_container">
-                    <img src="./img/label group.svg" alt="">
-                </div>
-            </div>  
         </div>
+        <div class="container_info">
+          <div class="svg_container">
+            <img src="./img/post_card.svg" alt="post_card" />
+          </div>
 
-         <!-- <div class="label_container">
+          <div class="label_container">
+            <img src="./img/label group.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="label_container">
                     <div class="first_row">
                         <span class="first_label">Go Social on Tsow</span>
                         <span class="second_label">Earn Coins!</span>
@@ -114,44 +128,48 @@
                     </div>
                 </div> -->
 
-        <div class="reward_wrapper">
-            <div class="summary_heading">
-                <span>Earn coins on your <b>Social Activity</b>,<br />
-                    build your<b> Networth</b> & redeem them <br />
-                    for</span>  
-            </div>
-            <div class="reward_inner_wrapper">
-                <div class="shopping">
-                    <img src="./img/shopping.png" alt="">
-                    <p class="reward_heading">Shopping</p>
-                </div>
-                <div class="VIP"> 
-                    <img src="./img/VIP.png" class="vip_img" alt="">
-                    <p class="reward_heading">Exclusive</p>
-                    <p class="reward_heading">membership</p>
-                </div>
-            </div>
-            <div class="reward_inner_wrapper">
-                <div class="brand">
-                    <img src="./img/Grow_Brand.png" class="brand_img" alt="">
-                    <p class="reward_heading">Growing </p>
-                    <p class="reward_heading">Your Brand</p>
-                </div>
-                <div class="money">
-                    <img src="./img/Money.png" alt="">
-                    <p class="reward_heading">Money!</p>
-                </div>
-            </div>
+      <div class="reward_wrapper">
+        <div class="summary_heading">
+          <span
+            >Earn coins on your <b>Social Activity</b>,<br />
+            build your<b> Networth</b> & redeem them <br />
+            for</span
+          >
         </div>
-
-        <div class="early_heading">
-            <P class="early_heading_first">Only  </P>
-            <P class="early_heading_second">25,000 </P>
-            <p class="early_heading_third">Early Bird Sign-ups </p>
-            <a href='#signup_container'><button type="submit2" onclick="">Book your Spot</button></a>
+        <div class="reward_inner_wrapper">
+          <div class="shopping">
+            <img src="./img/shopping.png" alt="" />
+            <p class="reward_heading">Shopping</p>
+          </div>
+          <div class="VIP">
+            <img src="./img/VIP.png" class="vip_img" alt="" />
+            <p class="reward_heading">Exclusive</p>
+            <p class="reward_heading">membership</p>
+          </div>
         </div>
+        <div class="reward_inner_wrapper">
+          <div class="brand">
+            <img src="./img/Grow_Brand.png" class="brand_img" alt="" />
+            <p class="reward_heading">Growing</p>
+            <p class="reward_heading">Your Brand</p>
+          </div>
+          <div class="money">
+            <img src="./img/Money.png" alt="" />
+            <p class="reward_heading">Money!</p>
+          </div>
+        </div>
+      </div>
 
-        <!-- <div class="middle_container">
+      <div class="early_heading">
+        <p class="early_heading_first">Only</p>
+        <p class="early_heading_second">25,000</p>
+        <p class="early_heading_third">Early Bird Sign-ups</p>
+        <a href="#signup_container"
+          ><button type="submit2" onclick="">Book your Spot</button></a
+        >
+      </div>
+
+      <!-- <div class="middle_container">
             <img src="./img/app_all_screen.png" class="screen" alt="">
             <div class="four_container">
                 <div class="first_row">
@@ -203,163 +221,209 @@
 
             </div>
         </div> -->
-        <!-- width="1439" height="868"  -->
-        
-            <div class="wave_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff"  d="M0,128L80,149.3C160,171,320,213,480,245.3C640,277,800,299,960,282.7C1120,267,1280,213,1360,186.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-                <!-- <div class="iframe-container ">
+      <!-- width="1439" height="868"  -->
+
+      <div class="wave_container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            d="M0,128L80,149.3C160,171,320,213,480,245.3C640,277,800,299,960,282.7C1120,267,1280,213,1360,186.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
+        <!-- <div class="iframe-container ">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/HfACrKJ_Y2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div> -->
-                
-                <div class="bubble_Container">
-                    
-                    <div class="bubble_Container1">
-                        <div class="bubble1_container">
-                            <img src="./img/bubble1.svg" class="bubble1" alt="">
-                            <p class="container_heading">Grow your Network</p>
-                            <span class="container_subheading">Expand your network by connecting with experts & entrepreneurs from multiple industries.&emsp;<br /><br />
-                              On Tsow, you don’t need contacts to grow!</span>
-                            <img src="./img/Grow_network.svg" class="Grow_network" alt="">
-                        </div>
-                        <div class="bubble2_container">
-                            <img src="./img/bubble2.svg" class="bubble2" alt="">
-                            <p class="container_heading">Share & Earn</p>
-                            <span class="container_subheading">Earn coins on sharing good information through posts from your followers.<br /><br />
-                                Tsow rewards you for your time spent on all social activity!</span>
-                            <img src="./img/networth.svg" class="networth" alt="">
-                        </div>
-                    </div>
 
-                    <div class="bubble_Container2">
-                        <div class="bubble3_container">
-                            <img src="./img/bubble3.svg" class="bubble3" alt="">
-                            <p class="container_heading">Discover Opportunites</p>
-                            <span class="container_subheading">Discover business & professional opportunities & latest trends through a brand new experience.</span>
-                            <img src="./img/ask_corner.svg" class="ask_corner" alt="">
-                        </div>
-                        <div class="bubble4_container">
-                            <img src="./img/bubble4.svg" class="bubble4" alt="">
-                            <p class="container_heading"> Increase Brand Value</p>
-                            <span class="container_subheading">Get access to Digital Spaces to feature yourself & your company at the prime spots of the App.<br /><br />
-                                Be an influencer of your domain!</span>
-                            <img src="./img/growth.png" class="growth" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-bottom: -7px;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff"  d="M0,256L80,213.3C160,171,320,85,480,69.3C640,53,800,107,960,149.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" ></path></svg><br />
-                </div>
+        <div class="bubble_Container">
+          <div class="bubble_Container1">
+            <div class="bubble1_container">
+              <img src="./img/bubble1.svg" class="bubble1" alt="" />
+              <p class="container_heading">Grow your Network</p>
+              <span class="container_subheading"
+                >Expand your network by connecting with experts & entrepreneurs
+                from multiple industries.&emsp;<br /><br />
+                On Tsow, you don’t need contacts to grow!</span
+              >
+              <img src="./img/Grow_network.svg" class="Grow_network" alt="" />
             </div>
+            <div class="bubble2_container">
+              <img src="./img/bubble2.svg" class="bubble2" alt="" />
+              <p class="container_heading">Share & Earn</p>
+              <span class="container_subheading"
+                >Earn coins on sharing good information through posts from your
+                followers.<br /><br />
+                Tsow rewards you for your time spent on all social
+                activity!</span
+              >
+              <img src="./img/networth.svg" class="networth" alt="" />
+            </div>
+          </div>
 
-        <div class="people_container">
-            <span class="people_bold">
-                Who’s On Tsow!
-            </span>
-            <span class="people_inner_container">
-                <span class="people">
-                    <img src="./img/Entreprenuers.png" alt="">
-                    <p class="people_heading">Entreprenuers</p>
-                </span>
-                <span class="people">
-                    <img src="./img/Start-ups.png" alt="">
-                    <p class="people_heading">Start-ups</p>
-                </span>
-                <span class="people">
-                    <img src="./img/Experts.png" alt="">
-                    <p class="people_heading">Experts</p>
-                </span>
-                <span class="people">
-                    <img src="./img/Students.png" alt="">
-                    <p class="people_heading">Students</p>
-                </span>
-            </span>
-            
-            <span class="people_inner_container">
-                <span class="people">
-                    <img src="./img/Professionals.png" alt="">
-                    <p class="people_heading">Professionals</p>
-                </span>
-                <span class="people">
-                    <img src="./img/Freelancers.png" alt="">
-                    <p class="people_heading">Freelancers</p>
-                </span>
-                <span class="people">
-                    <img src="./img/Businessmen.png" alt="">
-                    <p class="people_heading">Businessmen</p>
-                </span>
-            </span>
+          <div class="bubble_Container2">
+            <div class="bubble3_container">
+              <img src="./img/bubble3.svg" class="bubble3" alt="" />
+              <p class="container_heading">Discover Opportunites</p>
+              <span class="container_subheading"
+                >Discover business & professional opportunities & latest trends
+                through a brand new experience.</span
+              >
+              <img src="./img/ask_corner.svg" class="ask_corner" alt="" />
+            </div>
+            <div class="bubble4_container">
+              <img src="./img/bubble4.svg" class="bubble4" alt="" />
+              <p class="container_heading">Increase Brand Value</p>
+              <span class="container_subheading"
+                >Get access to Digital Spaces to feature yourself & your company
+                at the prime spots of the App.<br /><br />
+                Be an influencer of your domain!</span
+              >
+              <img src="./img/growth.png" class="growth" alt="" />
+            </div>
+          </div>
         </div>
-        
-        <div class="user_container">
-            <div class="user_inner_container">
-                <span class="heading_yellow_count">5,000+</span>
-                <span class="user_text">
-                    Users from Finance, Start-ups, Advertising, Freelancers, Tech etc. have joined the Tsow Network!
-                </span>
-            </div>
-            <a href='#signup_container'><button type="submit3" onclick="">Start Networking</button></a>
+        <div style="margin-bottom: -7px">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#fff"
+              d="M0,256L80,213.3C160,171,320,85,480,69.3C640,53,800,107,960,149.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path></svg
+          ><br />
         </div>
+      </div>
 
-        <div class="wave_container2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff"  d="M0,128L80,149.3C160,171,320,213,480,245.3C640,277,800,299,960,282.7C1120,267,1280,213,1360,186.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            <div class="screen_step_early_container">
-                <div class="top_wave_container">
-                    <div class="working_steps_container">
-                        <span class="working_heading">How it works?</span>
-                        <div class="working_steps">
-                           
-                            <img src="./img/1.png" alt="">
-                            <div class="working_step">Sign-up & join the<br /> Network</div>
-                        </div>
-                        <div class="working_steps">
-                            
-                            <img src="./img/2.png" alt="">
-                            <div class="working_step">Build Connections by<br /> following users</div>
-                        </div>
-                        <div class="working_steps">
-                           
-                            <img src="./img/3.png" alt="">
-                            <div class="working_step">Share your ideas & queries as posts & earn<br /> coins on them</div>
-                        </div>
-                        <div class="working_steps">
-                           
-                            <img src="./img/4.png" alt="">
-                            <div class="working_step">Grow your networth, create work profile & list<br /> your products & services</div>
-                        </div>
-                        <div class="working_steps">
-                           
-                            <img src="./img/5.png" alt="">
-                            <div class="working_step">Explore opportunities through<br /> industry pages</div>
-                        </div>
-                    </div>
-                    <img src="./img/mobile_screens.svg" class="mobile_screens" alt="">
+      <div class="people_container">
+        <span class="people_bold"> Who’s On Tsow! </span>
+        <span class="people_inner_container">
+          <span class="people">
+            <img src="./img/Entreprenuers.png" alt="" />
+            <p class="people_heading">Entreprenuers</p>
+          </span>
+          <span class="people">
+            <img src="./img/Start-ups.png" alt="" />
+            <p class="people_heading">Start-ups</p>
+          </span>
+          <span class="people">
+            <img src="./img/Experts.png" alt="" />
+            <p class="people_heading">Experts</p>
+          </span>
+          <span class="people">
+            <img src="./img/Students.png" alt="" />
+            <p class="people_heading">Students</p>
+          </span>
+        </span>
+
+        <span class="people_inner_container">
+          <span class="people">
+            <img src="./img/Professionals.png" alt="" />
+            <p class="people_heading">Professionals</p>
+          </span>
+          <span class="people">
+            <img src="./img/Freelancers.png" alt="" />
+            <p class="people_heading">Freelancers</p>
+          </span>
+          <span class="people">
+            <img src="./img/Businessmen.png" alt="" />
+            <p class="people_heading">Businessmen</p>
+          </span>
+        </span>
+      </div>
+
+      <div class="user_container">
+        <div class="user_inner_container">
+          <span class="heading_yellow_count">5,000+</span>
+          <span class="user_text">
+            Users from Finance, Start-ups, Advertising, Freelancers, Tech etc.
+            have joined the Tsow Network!
+          </span>
+        </div>
+        <a href="#signup_container"
+          ><button type="submit3" onclick="">Start Networking</button></a
+        >
+      </div>
+
+      <div class="wave_container2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            d="M0,128L80,149.3C160,171,320,213,480,245.3C640,277,800,299,960,282.7C1120,267,1280,213,1360,186.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="screen_step_early_container">
+          <div class="top_wave_container">
+            <div class="working_steps_container">
+              <span class="working_heading">How it works?</span>
+              <div class="working_steps">
+                <img src="./img/1.png" alt="" />
+                <div class="working_step">
+                  Sign-up & join the<br />
+                  Network
                 </div>
-
-                <div class="early_birds_container">
-                    <span class="heading_early">Don’t miss your slot to the brand new Social Network!</span>
-                    <span class="slots">Only 25,000 Early Bird Slots!</span>
-                    <a href='#signup_container'><button type="submit3" onclick="">Join in!</button></a>
-                    <img src="./img/star_5000_bonus.png" class="star_bonus" alt="">
+              </div>
+              <div class="working_steps">
+                <img src="./img/2.png" alt="" />
+                <div class="working_step">
+                  Build Connections by<br />
+                  following users
                 </div>
+              </div>
+              <div class="working_steps">
+                <img src="./img/3.png" alt="" />
+                <div class="working_step">
+                  Share your ideas & queries as posts & earn<br />
+                  coins on them
+                </div>
+              </div>
+              <div class="working_steps">
+                <img src="./img/4.png" alt="" />
+                <div class="working_step">
+                  Grow your networth, create work profile & list<br />
+                  your products & services
+                </div>
+              </div>
+              <div class="working_steps">
+                <img src="./img/5.png" alt="" />
+                <div class="working_step">
+                  Explore opportunities through<br />
+                  industry pages
+                </div>
+              </div>
             </div>
-            <div style="margin-bottom: -8px;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff"  d="M0,256L80,213.3C160,171,320,85,480,69.3C640,53,800,107,960,149.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg><br />
-            </div>
-        </div>
+            <img src="./img/mobile_screens.svg" class="mobile_screens" alt="" />
+          </div>
 
-
-        <div class="footer">
-            <span class="footer_heading">Coming Soon</span>
-            <div class="store">
-                <img src="./img/google_play.png" class="google_play" alt="">
-                <img src="./img/apple_store.png" alt="">
-            </div>
-            <span class="copy_right">All Rights Reserved By Arkkaya Fintrade Pvt. Ltd.<br >
-                2021</span>
+          <div class="early_birds_container">
+            <span class="heading_early"
+              >Don’t miss your slot to the brand new Social Network!</span
+            >
+            <span class="slots">Only 25,000 Early Bird Slots!</span>
+            <a href="#signup_container"
+              ><button type="submit3" onclick="">Join in!</button></a
+            >
+            <img src="./img/star_5000_bonus.png" class="star_bonus" alt="" />
+          </div>
         </div>
-        
+        <div style="margin-bottom: -8px">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#fff"
+              d="M0,256L80,213.3C160,171,320,85,480,69.3C640,53,800,107,960,149.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path></svg
+          ><br />
+        </div>
+      </div>
+
+      <div class="footer">
+        <span class="footer_heading">Coming Soon</span>
+        <div class="store">
+          <img src="./img/google_play.png" class="google_play" alt="" />
+          <img src="./img/apple_store.png" alt="" />
+        </div>
+        <span class="copy_right"
+          >All Rights Reserved By Arkkaya Fintrade Pvt. Ltd.<br />
+          2021</span
+        >
+      </div>
     </div>
-    <script src="./js/script.js">
-    </script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
