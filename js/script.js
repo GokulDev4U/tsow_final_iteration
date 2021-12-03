@@ -56,9 +56,9 @@ async function sendOtp(mobile, callback, errorSelector) {
       $(errorSelector).text(response.message || 'Something went wrong');
     }
   } catch (err) {
+    errorMessage((err && err.message) ||"Something went wrong!!");
     console.log(err);
     loaderOff();
-    errorMessage("Something went wrong!!");
   }
 }
 

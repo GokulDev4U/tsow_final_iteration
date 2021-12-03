@@ -17,7 +17,6 @@ $(document).ready(() => {
       if (hashName !== "") {
         var hash = window.location.hash;
         if (hash === "") {
-          alert("Back button was pressed.");
           window.location.href = "/";
           return false;
         }
