@@ -16,7 +16,7 @@
 //   }
 // };
 
-const serverUrl =  "http://tsowprod-env-2.eba-a9n3sp7x.ap-south-1.elasticbeanstalk.com/";
+const serverUrl =  "https://tsow.jvaresearch.com/";
 
 async function startNetWorking() {
   const mobile = document.getElementById("mobileno");
