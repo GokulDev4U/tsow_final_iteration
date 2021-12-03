@@ -32,8 +32,15 @@ $(document).ready(() => {
         loaderOff()
         console.log(response);
         if (response.status !== "failed") {
-            interval && clearInterval(interval)
-            window.location.href = "/signup.html";
+            if(response.isExistingUser){
+              infoMessage("You are already our member. Redirecting to homepage");
+              setTimeout(() => {
+                window.location.href = "/";
+              }, 3000);
+            }else{
+              interval && clearInterval(interval)
+              window.location.href = "/signup.html";
+            }
         } else {
           $(".error_message").text(response.message);
         }
@@ -66,4 +73,15 @@ $(document).ready(() => {
         }
     },1000)
   };
+
+  function infoMessage(text) {
+    if(window.Toastify){
+      window.Toastify({
+        text,
+        duration: 3000,
+        backgroundColor: "#1877f2",
+        position: "center",
+      }).showToast();
+    }
+  }
 });
