@@ -739,6 +739,7 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0.14;
 }
 .people_heading {
   font-weight: 600;
@@ -753,6 +754,7 @@ button[type="submit"] {
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
+  flex: 1;
 }
 .user_container {
   flex: 1;
@@ -925,6 +927,18 @@ button[type="submit"] {
   .nav_section_inner {
     padding: 20px 15%;
   }
+  .container_heading {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-20%, -35%);
+  }
+  .container_subheading {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-35%, -35%);
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -1094,6 +1108,22 @@ button[type="submit"] {
     bottom: -190px;
   }
 }
+
+@media screen and (max-width: 2344px) and (min-width: 1778px) {
+  .container_heading {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    transform: translate(-20%, -37%);
+  }
+  .container_subheading {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-35%, -40%);
+  }
+}
+
 @media screen and (max-width: 1744px) and (min-width: 1367px) {
   .middle_container {
     display: flex;
@@ -1108,17 +1138,20 @@ button[type="submit"] {
     width: 100%;
     height: 100%;
   }
-  /* .second_container,
-  .fourth_container {
-    margin-left: 220px;
-    margin-top: 50px;
-  }
-  .first_container,
-  .third_container {
-    margin-right: 220px;
-  } */
   .bubble_Container1 {
     margin-bottom: -45%;
+  }
+  .container_heading {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    transform: translate(-20%, -37%);
+  }
+  .container_subheading {
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    transform: translate(-35%, -44%);
   }
 }
 
@@ -1184,6 +1217,18 @@ button[type="submit"] {
   .summary_heading {
     text-align: center;
     margin-bottom: 40px;
+  }
+  .container_heading {
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    transform: translate(-20%, -42%);
+  }
+  .container_subheading {
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    transform: translate(-35%, -42%);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1274,11 +1319,17 @@ button[type="submit"] {
     font-size: 36px;
     line-height: 30px;
   }
+  .people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.14;
+  }
   .people_inner_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* display: inline; */
+    flex: 1;
   }
   .people_heading {
     font-style: normal;
