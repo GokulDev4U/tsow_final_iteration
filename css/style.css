@@ -309,6 +309,11 @@ button[type="submit3"] {
 .bubble_Container2 {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.bubble_Container2 {
+  margin-bottom: -150px;
 }
 
 .bubble_max {
@@ -335,31 +340,30 @@ button[type="submit3"] {
   position: relative;
 }
 .container_heading {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
-  margin-bottom: 20px;
   text-align: center;
   position: absolute;
   top: 20%;
-  left: 37%;
-  transform: translate(-20%, -37%);
+  left: 32%;
+  transform: translate(-20%, -32%);
 }
 .container_subheading {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
   color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
   position: absolute;
   top: 35%;
-  left: 35%;
-  transform: translate(-35%, -35%);
+  left: 37%;
+  transform: translate(-35%, -37%);
 }
-/* .container_heading_row2 {
-  font-weight: 600;
+.container_heading_row2 {
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
@@ -367,20 +371,30 @@ button[type="submit3"] {
   text-align: center;
   position: absolute;
   top: 20%;
-  left: 37%;
-  transform: translate(-20%, -37%);
-} */
+  left: 28%;
+  transform: translate(-20%, -28%);
+}
 .Grow_network {
   position: absolute;
   top: 70%;
-  left: 50%;
-  transform: translate(-70%, -50%);
+  left: 53%;
+  transform: translate(-70%, -53%);
+  /* width="138" height="90" */
+  max-width: 138px;
+  max-height: 90px;
+  width: 100%;
+  height: 100%;
 }
+
 .networth {
   position: absolute;
-  top: 70%;
-  left: 70%;
-  transform: translate(-70%, -70%);
+  top: 85%;
+  left: 82%;
+  transform: translate(-85%, -82%);
+  max-width: 306px;
+  max-height: 126px;
+  width: 100%;
+  height: 100%;
 }
 .growth {
   position: absolute;
@@ -393,6 +407,11 @@ button[type="submit3"] {
   top: 77%;
   left: 60%;
   transform: translate(-77%, -60%);
+  /* width="151" height="172" */
+  max-width: 151px;
+  max-height: 172px;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1013,26 +1032,10 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   .nav_section_inner {
     padding: 20px 15%;
   }
-  /* .bubble1_container,
-  .bubble3_container {
-    margin-top: 200px;
+  .bubble_Container1,
+  .bubble_Container2 {
+    padding: 0px 30%;
   }
-  .bubble2_container,
-  .bubble4_container {
-    margin-bottom: 200px;
-  } */
-  /* .container_heading {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translate(-20%, -35%);
-  }
-  .container_subheading {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-35%, -35%);
-  } */
   .working_step {
     margin-left: 10px;
   }
@@ -1060,8 +1063,15 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   .early_birds_container {
     margin-top: -200px;
   }
+  .bubble_Container2 {
+    margin-bottom: -150px;
+  }
 }
-/* @media screen and (max-width: 1110px) { */
+@media screen and (max-width: 1317px) {
+  .bubble_Container2 {
+    margin-bottom: -250px;
+  }
+}
 @media screen and (max-width: 800px) {
   .first_wrapper {
     display: flex;
@@ -1181,6 +1191,16 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   }
   .working_heading {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 775px) and (min-width: 480px) {
+  .bubble_Container1,
+  .bubble_Container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 10%; */
   }
 }
 /* @media screen and (max-width: 1367px) and (min-width: 1110px) {
@@ -1504,7 +1524,11 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
     flex-direction: column;
     align-items: center;
   }
+  .bubble_Container2 {
+    margin-bottom: -70px;
+  }
 }
+
 .input-main {
   width: 100%;
   position: relative;
