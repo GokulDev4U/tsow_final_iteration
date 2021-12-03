@@ -53,11 +53,12 @@ async function sendOtp(mobile, callback, errorSelector) {
     } else {
       const response = await request.json();
       console.log(response);
-      $(errorSelector).text(response.message);
+      $(errorSelector).text(response.message || 'Something went wrong');
     }
   } catch (err) {
     console.log(err);
-    $(errorSelector).text("Something went wrong!!");
+    loaderOff();
+    errorMessage("Something went wrong!!");
   }
 }
 
