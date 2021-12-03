@@ -16,34 +16,59 @@
 //   }
 // };
 
-const serverUrl = "https://tsow-server.herokuapp.com";
+const serverUrl =
+  "http://localhost:3000" && "https://tsow-server.herokuapp.com";
 
 async function startNetWorking() {
   const mobile = document.getElementById("mobileno");
   if (mobile && mobile.value && validateMobile(mobile.value)) {
-    try {
-      const data = { mobileNumber: mobile.value };
-      const request = await fetch(`${serverUrl}/auth/signin/mobile`, {
-        method: "POST",
-        body: JSON.stringify(data),
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-      });
+    const callback = () => (window.location.href = "/otp.html");
+    sendOtp(mobile.value, callback);
+  }
+}
+
+function loaderOn(){
+  $(".pac-loader").css("display", "flex");
+}
+function loaderOff(){
+  $(".pac-loader").css("display", "none");
+}
+
+async function sendOtp(mobile, callback) {
+  try {
+    loaderOn()
+    const data = { mobileNumber: "+91" + mobile };
+    const request = await fetch(`${serverUrl}/auth/signin`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+    });
+    loaderOff()
+    if (request.status === 201) {
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ mobile, isVerified: false })
+      );
+      callback && callback();
+    } else {
       const response = await request.json();
-      console.log({ response });
-    } catch (err) {
-      console.log(err, "err");
+      console.log(response);
+      $("#mobileError").text(response.message);
     }
+  } catch (err) {
+    console.log(err);
+    $("#mobileError").text("Something went wrong!!");
   }
 }
 
 function validateMobile(inputtxt) {
   var phoneno = /^\d{10}$/;
   if (inputtxt.match(phoneno)) {
-    document.getElementById("mobileError").style.display = "none";
+    $("#mobileError").text("");
     return true;
   } else {
-    document.getElementById("mobileError").style.display = "block";
+    $("#mobileError").text("Enter valid mobile number");
     return false;
   }
 }

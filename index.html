@@ -10,10 +10,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 <body>
     <div class="container">
-
+        <div class="pac-loader">
+            <img class="pac-img" src="./img/pacloader.gif" alt="">
+        </div>
         <div class="nav_section">
             <div class="nav_section_inner">
                 <img src="./img/Logo.svg" alt="" >
@@ -44,11 +47,11 @@
                         </p>
                         <form>
                             <label  class="account_label">Enter Your Mobile Number to create account</label><br>
-                            <input id='mobileno' type="text" class="mobileno"  placeholder="Enter 10 Digit Mobile Number:">
-                            <span id="mobileError" class="error_message">Enter valid mobile number</span>
+                            <input id='mobileno' type="number" class="mobileno input-box"  placeholder="Enter 10 Digit Mobile Number:">
+                            <div id="mobileError" class="error_message"></div>
                             <br>
                         </form>
-                        <button onclick="startNetWorking()" type="submit" >Start Networking</button>
+                        <button onclick="startNetWorking()" id="startNetworking" >Start Networking</button>
                         <!-- <a href='otp.html'>
                         </a> -->
                     </div>

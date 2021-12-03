@@ -10,20 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="otp-content">
+        <div class="pac-loader">
+            <img class="pac-img" src="./img/pacloader.gif" alt="">
+        </div>
         <img src="./img/Enter_otp.svg" alt=""><br /><br />
-        <p class="otp_text">please type the OTP sent to<br /> 
-          +91 9876543210.</p><br />
+        <p class="otp_text">please type the OTP sent to <br /> 
+          <span id="selectedMobile"></span></p><br />
           <form>
-              <input type="text" class="otp_input" name="otp" placeholder="Enter 6 Digits OTP No."><br>
-              <span class="error_message">Please enter right OTP</span><br /><br />
+              <input type="text" maxlength="4" class="otp_input input-box" name="otp" placeholder="Enter 4 Digits OTP No."><br>
+              <span class="error_message"></span><br /><br />
           </form>
-          <span class="seconds">0:10</span><br />
-          <span class="resend_otp"><img src="./img/message.png" alt="">&ensp; Resend OTP</span>
-          <a href='signup.html'><button id="mobileButton" type="submit" >Verify</button></a>
+          <span class="seconds"></span><br />
+          <button class="resend_otp"><img src="./img/message.png" alt="">&ensp; Resend OTP</button>
+          <button id="mobileButton" type="submit" >Verify</button>
       </div> 
-    
+      <script src="./js/script.js"></script>
+    <script src="./js/otp.js"></script>
 </body>
 </html>
