@@ -1299,7 +1299,8 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
     flex-direction: column;
     align-items: stretch;
     padding: 70px 0px;
-    margin: 0px 5px;
+    /* margin: 0px 5px; */
+    margin-top: -140px;
   }
   .reward_inner_wrapper {
     flex: 0.5;
@@ -1338,7 +1339,9 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
     flex-direction: column;
     align-items: stretch;
     padding: 70px 0px;
-    margin: 0px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -60px;
   }
   .reward_inner_wrapper {
     flex: 0.5;
@@ -1360,7 +1363,7 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
     padding-left: 10px;
     width: 100%;
     height: 100%;
-    /* margin: 0px 0px; */
+    margin-bottom: 20px;
   }
 
   .label_container {
