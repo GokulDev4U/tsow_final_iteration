@@ -16,7 +16,7 @@
 //   }
 // };
 
-const serverUrl =  "https://tsow-server.herokuapp.com";
+const serverUrl =  "https://tsow.jvaresearch.com";
 
 async function startNetWorking() {
   const mobile = document.getElementById("mobileno");
