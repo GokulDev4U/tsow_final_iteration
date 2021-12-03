@@ -50,11 +50,11 @@ $(document).ready(() => {
   });
   $(".resend_otp").click(() => {
       startTimer()
-      sendOtp(userData.mobile)
+      sendOtp(userData.mobile, null, '.error_message')
   })
 
   function startTimer(){
-    let time = 10;
+    let time = 30;
     $(".resend_otp").attr("disabled", true)
     interval = setInterval(() => {
         $(".seconds").text(`0:${time}`);

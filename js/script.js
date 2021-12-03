@@ -23,20 +23,20 @@ async function startNetWorking() {
   const mobile = document.getElementById("mobileno");
   if (mobile && mobile.value && validateMobile(mobile.value)) {
     const callback = () => (window.location.href = "/otp.html");
-    sendOtp(mobile.value, callback);
+    sendOtp(mobile.value, callback, "#mobileError");
   }
 }
 
-function loaderOn(){
+function loaderOn() {
   $(".pac-loader").css("display", "flex");
 }
-function loaderOff(){
+function loaderOff() {
   $(".pac-loader").css("display", "none");
 }
 
-async function sendOtp(mobile, callback) {
+async function sendOtp(mobile, callback, errorSelector) {
   try {
-    loaderOn()
+    loaderOn();
     const data = { mobileNumber: "+91" + mobile };
     const request = await fetch(`${serverUrl}/auth/signin`, {
       method: "POST",
@@ -44,7 +44,7 @@ async function sendOtp(mobile, callback) {
       headers: { "Content-Type": "application/json" },
       credentials: "include",
     });
-    loaderOff()
+    loaderOff();
     if (request.status === 201) {
       localStorage.setItem(
         "user",
@@ -54,11 +54,22 @@ async function sendOtp(mobile, callback) {
     } else {
       const response = await request.json();
       console.log(response);
-      $("#mobileError").text(response.message);
+      $(errorSelector).text(response.message);
     }
   } catch (err) {
     console.log(err);
-    $("#mobileError").text("Something went wrong!!");
+    $(errorSelector).text("Something went wrong!!");
+  }
+}
+
+function errorMessage(text) {
+  if(window.Toastify){
+    window.Toastify({
+      text,
+      duration: 3000,
+      backgroundColor: "#ee1414",
+      position: "center",
+    }).showToast();
   }
 }
 
