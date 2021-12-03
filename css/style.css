@@ -49,6 +49,16 @@ select,
 a :focus {
   outline: none !important;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 .iframe-container {
   position: relative;
   width: 100%;
@@ -119,13 +129,11 @@ button[type="submit2"] {
   text-align: center;
 }
 button[type="submit3"] {
-  /* width: 133px; */
   background: #18a0fb;
+  font-size: 18px;
   border-radius: 50px;
   color: white;
   font-weight: bold;
-  /* font-size: clamp(14px, 1vw, 18px); */
-  /* line-height: clamp(21px, 1vw, 27px); */
   padding: 10px 40px;
   margin: 10px 0;
   border: none;
@@ -832,18 +840,21 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
 }
 .heading_yellow_count {
   font-weight: bold;
   font-size: 48px;
   line-height: 59px;
   color: #fdd015;
+  flex: 0.8;
 }
 .user_text {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+  flex: 0.2;
 }
 .screen_step_early_container {
   /* position: relative; */
