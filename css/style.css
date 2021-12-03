@@ -173,21 +173,21 @@ button[type="submit2"] {
 .first_label {
   background: linear-gradient(90deg, #18a0fb 1.5%, #fdd015 108.25%);
   border-radius: 50px;
-  padding: 10px 30px;
-  margin: 10px 0;
+  padding: 10px 15px;
+  margin: 2px 5px;
   border: none;
   cursor: pointer;
   text-align: center;
   font-style: italic;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 12px;
   color: #ffffff;
 }
 .second_label {
   background: linear-gradient(90deg, #1d915c 0%, #1877f2 100%);
   border-radius: 50px;
-  padding: 10px 30px;
-  margin: 10px 0;
+  padding: 10px 15px;
+  margin: 2px 0;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -199,8 +199,8 @@ button[type="submit2"] {
 .third_label {
   background: linear-gradient(90deg, #e25840 0%, #293c4b 100%);
   border-radius: 50px;
-  padding: 10px 30px;
-  margin: 10px 0;
+  padding: 10px 15px;
+  margin: 3px 5px;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -212,8 +212,8 @@ button[type="submit2"] {
 .forth_label {
   background: linear-gradient(90deg, #189ff9 11.95%, #1d915c 89.04%);
   border-radius: 50px;
-  padding: 10px 30px;
-  margin: 10px 0;
+  padding: 10px 15px;
+  margin: 3px 0;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -1476,19 +1476,49 @@ button[type="submit"] {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 10px;
   }
   .second_row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     margin-left: 30px;
   }
-  .second_label,
+  .first_label {
+    margin: 0px 10px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .second_label {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .third_label {
+    margin: 0px 10px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .forth_label {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 9px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  /* .second_label,
   .forth_label {
     margin-left: 5px;
-  }
+  } */
   .star_bonus {
     position: absolute;
     top: -35px;
