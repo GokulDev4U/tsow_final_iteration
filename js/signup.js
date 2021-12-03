@@ -91,6 +91,7 @@ $(document).ready(() => {
     selectedIndustry = $(this).data();
     $("#industryProfession").val(selectedIndustry.name);
     $(".autocompleteBox").css("display", "none");
+    $(`.profession-error`).text("");
     console.log("dddd", selectedIndustry);
   });
 
@@ -180,34 +181,42 @@ $(document).ready(() => {
     const lastName = $(".last_name_input").val();
     const profession = selectedIndustry;
     const username = $(".username-input").val();
-    let isValid = true
+    let isValid = true;
     if (!firstName.trim()) {
       $(`.first-error`).text("Required field");
-      isValid = false
+      isValid = false;
     }
     if (!lastName.trim()) {
       $(`.last-error`).text("Required field");
-      isValid = false
+      isValid = false;
     }
     if (!profession) {
       $(`.profession-error`).text("Required field");
-      isValid = false
+      isValid = false;
     }
 
     if (!username.trim()) {
       $("#notavailable").text("Username not available");
-      isValid = false
+      isValid = false;
     }
-    let modifiedProfessionData = { name: profession.name, industryName: profession.industryname ,industryId: profession.industryid}
-    if(isValid){
-      createUser({ firstName, lastName, username, profession:modifiedProfessionData})
+    let modifiedProfessionData = {
+      name: profession.name,
+      industryName: profession.industryname,
+      industryId: profession.industryid,
+    };
+    if (isValid && isAvailable) {
+      createUser({
+        firstName,
+        lastName,
+        username,
+        profession: modifiedProfessionData,
+      });
     }
-
   });
 
   async function createUser(userData) {
     try {
-      loaderOn()
+      loaderOn();
       const request = await fetch(`${serverUrl}/auth/signup/mobile`, {
         method: "POST",
         body: JSON.stringify(userData),
@@ -215,14 +224,16 @@ $(document).ready(() => {
         credentials: "include",
       });
       const response = await request.json();
-      loaderOff()
-      if(request.status === 200){
-        window.location.href = "/Member.html"
-        console.log(response, "sss")
-      }else{
-        alert(response.message)
+      loaderOff();
+      if (request.status === 201) {
+        window.location.href = "/Member.html";
+        console.log(response, "sss");
+      } else {
+        errorMessage(response.message || 'Something went wrong');
       }
-      
-    } catch (err) {alert("Something went wrong")}
+    } catch (err) {
+      errorMessage("Something went wrong");
+    }
   }
+
 });

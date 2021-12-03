@@ -542,10 +542,10 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   text-transform: capitalize;
   color: #72686f;
 }
-.mobileno {
-  height: 50px;
+/* .mobileno {
+  height: 200px;
   font-size: 16px;
-}
+} */
 
 #mobileButton,
 #startNetworking {
