@@ -855,6 +855,7 @@ input[type="text"] .mobileno::-webkit-input-placeholder {
   line-height: 30px;
   color: #ffffff;
   flex: 0.2;
+  text-align: center;
 }
 .screen_step_early_container {
   /* position: relative; */
