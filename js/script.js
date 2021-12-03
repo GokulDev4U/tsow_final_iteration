@@ -16,7 +16,7 @@
 //   }
 // };
 
-const serverUrl =  "https://tsow-server.herokuapp.com";
+const serverUrl =  "http://tsowprod-env-2.eba-a9n3sp7x.ap-south-1.elasticbeanstalk.com/";
 
 async function startNetWorking() {
   const mobile = document.getElementById("mobileno");
