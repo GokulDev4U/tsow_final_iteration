@@ -116,6 +116,20 @@ button[type="submit2"] {
   cursor: pointer;
   text-align: center;
 }
+button[type="submit3"] {
+  /* width: 133px; */
+  background: #18a0fb;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  /* font-size: clamp(14px, 1vw, 18px); */
+  /* line-height: clamp(21px, 1vw, 27px); */
+  padding: 10px 40px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
 
 .heading {
   padding-top: 140px;
@@ -164,7 +178,7 @@ button[type="submit2"] {
   flex-direction: column;
 }
 .first_row {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .second_row {
   margin-bottom: 30px;
@@ -914,6 +928,12 @@ button[type="submit"] {
   color: #000000;
   margin: 40px 0px;
 }
+.working_step {
+  margin-left: 10px;
+}
+.working_heading {
+  margin-left: 30px;
+}
 
 @media screen and (min-width: 2000px) {
   .early_heading {
@@ -938,6 +958,12 @@ button[type="submit"] {
     top: 35%;
     left: 35%;
     transform: translate(-35%, -35%);
+  }
+  .working_step {
+    margin-left: 10px;
+  }
+  .working_heading {
+    margin-left: 40px;
   }
 }
 
@@ -1083,6 +1109,12 @@ button[type="submit"] {
   .second_label,
   .forth_label {
     margin-left: 5px;
+  }
+  .working_step {
+    margin-left: 10px;
+  }
+  .working_heading {
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 1367px) and (min-width: 1110px) {
@@ -1437,12 +1469,14 @@ button[type="submit"] {
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
+    margin-left: 10px;
   }
   .working_heading {
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
     color: #fdd015;
+    margin-left: 20px;
   }
   /* .working_steps_no {
     margin-left: 30px;
